@@ -1,0 +1,432 @@
+﻿/*CSS layout*/
+
+/*Το σώμα του CSS, με το "as.jpg" ως βασικό background που επαναλαμβάνεται*/
+html,body
+{
+	height:100%;
+	/*background-image:url('as.jpg')*/
+	background-color:#E0E0E0; 
+}
+
+/*Το μέγεθος του site μας, στα 960 pixels. Η υπόλοιπη σελίδα, για τις μεγαλύτερες αναλύσεις, καλύπτεται απ' το background*/
+#wrap
+{
+	min-height: 100%;
+	width:960px;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*Η τοποθεσία του login form*/
+#login
+{
+	width: 55px; height: 12px;
+}
+
+#submit
+{
+	 style="width: 50px; height: 26px" 
+}
+
+#register
+{
+	width: 60px; height: 22px; margin-left: 4px;
+}
+
+/*Η τοποθεσία και οι ρυθμίσεις του header*/
+#masthead
+{
+	/*Η σκιά του header*/
+	
+	/*Το background του header*/
+	background-image:url('header-inner3.png');
+	/*Πληροφορίες τοποθεσίας του*/
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+	font-size:small;
+	font-weight:bold;
+	text-align:right;
+	height:120px;
+	border-radius:15px 15px 0px 0px;
+}
+
+#container{
+
+
+ }
+
+/*Πληροφορίες για το περιεχόμενο της σελίδας*/
+#page_content
+{
+	margin-top:20px;
+	margin-bottom:20px;
+	min-height:400px;
+	overflow:auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	
+	
+	margin-left: auto;
+	margin-right:auto;
+	/*Σε περίπτωση αδυναμίας εμφάνισης λόγω browser (παλαιότερες εκδόσεις IE κλπ)*/
+	/*εμφανίζονται τα πιο κάτω στοιχεία*/
+    background-color:white;
+    background: url(images/linear_bg_2.png);
+    background-repeat: repeat-x;
+    /*Background για Safari 4-5, Chrome 1-9*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#6699FF));
+    /*Background για Safari 5.1, Chrome 10+*/
+    background: -webkit-linear-gradient(top,white,#6699FF); 
+    /*Background για Firefox 3.6+*/
+    background: -moz-linear-gradient(top,white,#6699FF);
+    /*Background για IE 9,10*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#6699FF');
+    /*Background για Opera 11.10+*/
+    background: -o-linear-gradient(top,white,#6699FF);
+    	
+	/*Να σημειωθεί πως ο Internet Explorer, δεν εμφανίζει τα πλαίσια curved, αλλά με γωνίες.*/
+}
+
+/*Πληροφορίες για το footer*/
+#footer
+{
+	
+	
+	/*Η background εικόνα του footer*/
+	background-image:url('footer-inner3.png');
+	font-family:Arial;
+	color:black;
+	font-size:12px;
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	border-radius:0px 0px 15px 15px;
+	margin-top: 20px; /*Αρνητική τιμή του footer height*/
+	height: 120px;
+	clear:both;
+}
+
+/*Πληροφορίες για τη γραμμή μενού*/
+#menu
+{
+	padding:0;
+	float:left;
+	width:960px;
+	background-color:white;
+	font-family:"Arial";
+	
+}
+
+#menu ul
+{
+	padding:0;
+	margin:0;
+	
+}
+
+#menu li
+{
+	position: relative;
+	float: left;
+	list-style:none;
+	margin: 0;
+	padding:0;
+	background:white url("separator.png") no-repeat right;
+}	
+
+/*Οι πληροφορίες για το μενού, όταν τα πλήκτρα είναι σε normal state*/
+/*δηλαδή δεν υπάρχει δείκτης του ποντικιού επάνω τους*/ 
+#menu li a
+{
+	width:auto;
+	height: 30px;
+	display:block;
+	font-size:14px;
+	text-decoration:none;
+	text-align: center;
+	line-height: 30px;
+	/*background-color:white;*/
+	/*border-radius:8px 8px 0px 0px;
+	/*background-color:#E9E9E9;
+	/*background-image:url('button-normal.png');*/
+	color: black;
+	margin-left:5px;
+	margin-right:5px;
+	
+}
+ 
+/*Η εικόνα του πλήκτρου αλλάζει όταν ο δείκτης του ποντικιού περάσει*/
+/*επάνω απ' το πλήκτρο, στην "button-over.png"*/
+#menu li a:hover
+{
+	background-color:#6699FF;
+	/*background-image:url('button-over.png');*/
+}
+
+/*Πληροφορίες στην περίπτωση που ο χρήστης πατήσει το πλήκτρο*/
+/*του ποντικιού (mouse onclick)*/
+#menu li a:active
+{
+	/*background-color:blue;
+	background-image:url('button-down.png');*/
+}
+
+/*Πληροφορίες για την drop-down list που εμφανίζεται*/
+/*όταν υπάρχουν πολλές child σελίδες, κάτω από μια parent*/
+/*όπως με την επιλογή "View all items"*/ 
+#menu ul ul
+{
+	position: absolute;
+	top: 30px;
+	
+	visibility: hidden; /*Η λίστα είναι κρυφή αρχικά*/
+}
+
+/*Σε περίπτωση hover του ποντικιού επάνω στην επιλογή*/
+/*η λίστα γίνεται "visible" -εμφανίζεται*/
+#menu ul li:hover ul
+{
+	visibility:visible;
+	background-color:white;
+	width:158px;
+	height:auto;
+	text-align:center;
+}
+
+/*Πληροφορίες για το κείμενο και τη γραμματοσειρά*/
+#text
+{
+	font-size:large;
+	font-weight:bold;
+	font-family:"Arial";
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#text2
+{
+	font-size:medium;
+	font-family:"Arial";
+	text-align:left;
+}
+
+#text3
+{
+	font-family:Arial;
+	font-size:12px;
+	color:black;
+	margin-left:5px;
+}
+
+#text4
+{
+	font-family:Arial;
+	font-size:14px;
+	color:black;
+	margin-left:5px;
+}
+
+#text5
+{
+	font:Arial;
+	font-size:20px;
+	font-weight:bold;
+	color:black;
+	text-align:left;
+	margin-left:5px;
+}
+
+#text6
+{
+	font:Arial;
+	font-size:16px;
+	color:black;
+	text-align:left;
+	margin-left:5px;
+}
+
+#text7
+{
+	font-weight:bold;
+}
+
+#text8
+{
+	font-family:Arial;
+}
+
+#text9
+{
+	font-family:Arial;
+	font-size:14px;
+}
+
+#text10
+{
+	font-family:Arial;
+	font-size:inherit;
+	text-align:center;
+}
+
+#text11
+{
+	font-family:Arial;
+	font-size:12px;
+	
+}
+
+#text12
+{
+	font-family:Arial;
+	font-size:medium;
+	color:red;
+	font-weight:bold;
+}
+#text13
+{
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+	color:red;
+	
+}
+
+#text14
+{
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+	color:red;
+}
+
+#text15
+{
+	font-family:Arial;
+	text-decoration:underline;
+}
+
+
+/*Πληροφορίες για την εμφάνιση των σχολίων*/
+#comments
+{
+	text-align: left;  
+	border-bottom: thin gray solid;
+}
+
+/*Πληροφορίες για την εμφάνιση της κύριας σελίδας*/
+#mainpage
+{
+	background-color:white;
+	box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+	border-radius:15px;
+	padding:10px;
+	font-family:"Arial";
+}
+
+/*Πληροφορίες για την εμφάνιση των αντικειμένων, όταν επιλέγεται*/
+/*η προβολή όλων*/
+#listitems
+{
+	font-family: 'Arial';
+	font-size:14px;
+    text-align:left;
+    background:#E9E9E9;
+    margin-left:5px;
+    width:700px;
+    padding:20px;
+	border-width:2px; 
+	
+}
+
+#listitems1
+{
+	font-family: 'Arial';
+	font-size:14px;
+    text-align:left;
+    background:#E9E9E9;
+    margin-left:5px;
+    width:auto;
+    padding:20px;
+	border-width:2px; 
+	
+}
+
+#iconstyle
+{
+	border-color:black;
+	border-width:1px;
+	border-style:solid;
+}
+
+#bidbutton
+{
+	font-family:Arial;
+	font-size:14px;
+	text-align:center;
+	height:30px;
+	width:210px;
+	border-width:1px;
+	border-color:black;
+	border-style:solid;
+	background-image:url('bid-button.png');
+	
+}
+
+#favbutton-plus
+{
+	
+	font-family:Arial;
+	background-color:transparent;
+	font-size:14px;
+	text-align:center;
+	height:30px;
+	width:30px;
+	border-width:0px;
+	border-style:none;
+	background-image:url('favorites-plus-normal.png');
+}
+
+#favbutton-plus:hover
+{
+	background-image:url('favorites-plus-hover.png');
+
+}
+
+#favbutton-plus:active
+{
+	background-image:url('favorites-plus-down.png');
+}
+
+#favbutton-delete
+{
+	
+	font-family:Arial;
+	background-color:transparent;
+	font-size:14px;
+	text-align:center;
+	height:30px;
+	width:30px;
+	border-width:0px;
+	border-style:none;
+	background-image:url('favorites-delete-normal.png');
+}
+
+#favbutton-delete:hover
+{
+	background-image:url('favorites-delete-hover.png');
+}
+
+#favbutton-delete:active
+{
+	background-image:url('favorites-delete-down.png');
+}

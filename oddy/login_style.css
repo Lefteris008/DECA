@@ -1,0 +1,42 @@
+﻿.topright{
+    text-align:right; 
+    font-family:"Arial";
+	background-color:#E9E9E9;
+	font-size:small;
+	width:392px;
+	height:auto;
+	padding: 10px 10px 5px 10px;
+	float:right;
+	border-radius:0px 15px 0px 0px;
+    
+    
+}
+.form_text{
+	color: black;
+	font-weight: normal;
+	font-family:"Arial";
+
+}
+.radius{
+  
+  margin:0px 0px 0px -15px;
+}
+.centered {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+.text_center {
+	text-align: center;
+	font-family:"Arial";
+	background-color:black;
+}
+.text_left {
+	text-align: left;
+}
+.radius_reg{
+	
+}
+

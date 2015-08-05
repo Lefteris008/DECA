@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+
+
+<head>
+<link href="members/form/form.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+</style>
+
+<title>Register</title>
+<script src="gen_validatorv4.js" type="text/javascript"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		document.title="ΤΗΔΟ | Εγγραφή χρήστη";
+	</script>
+
+	
+<form id="form" style="margin-top:auto;" action="registration.php" method="post">
+	<div >
+<h1>Φόρμα εγγραφής</h1>
+	<div>
+		Συμπληρώστε τα πεδία με τα πραγματικά σας στοιχεία.</div>
+		<br/>
+<table style="margin:inherit" id="table">
+<tr>
+
+<td>Όνομα χρήστη (username)*:</td><td><input name="username" type="text" size="20" required="required"/></td>
+</tr>
+<tr>
+<td>Email*:</td><td><input name="email" type="email" size="20" required="required"/></td> 
+</tr>
+<tr>
+<td>Κωδικός πρόσβασης*:</td><td><input name="password" type="password" size="20" required="required"/></td> 
+</tr>
+<tr>
+<td>Επανεισαγωγή κωδικού πρόσβασης*:</td><td><input name="password_conf" type="password" size="20" required="required"/></td> 
+</tr>
+<tr>
+<td>Επώνυμο*:</td><td><input name="surname" type="text" size="30" required="required"/></td> 
+</tr>
+<tr>
+<td>Όνομα*:</td><td><input name="name" type="text" size="30" required="required"/></td> 
+</tr>
+<tr>
+<td>Ημ. γέννησης (ΗΗ/ΜΜ/ΧΧΧΧ)*:</td>
+<td>
+<select name="day">
+	<option value="01">01</option>
+	<option value="02">02</option>
+	<option value="03">03</option>
+	<option value="04">04</option>
+	<option value="05">05</option>
+	<option value="06">06</option>
+	<option value="07">07</option>
+	<option value="08">08</option>
+	<option value="09">09</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+	<option value="24">24</option>
+	<option value="25">25</option>
+	<option value="26">26</option>
+	<option value="27">27</option>
+	<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+</select>
+<select name="month">
+	<option value="01">Ιανουάριος</option>
+	<option value="02">Φεβρουάριος</option>
+	<option value="03">Μάρτιος</option>
+	<option value="04">Απρίλιος</option>
+	<option value="05">Μάιος</option>
+	<option value="06">Ιούνιος</option>
+	<option value="07">Ιούλιος</option>
+	<option value="08">Αύγουστος</option>
+	<option value="09">Σεπτέμβριος</option>
+	<option value="10">Οκτώβριος</option>
+	<option value="11">Νοέμβριος</option>
+	<option value="12">Δεκέμβριος</option>
+</select>
+<input name="year" type="text" size="4" required="required" value="2012" title="Εδώ συμπληρώστε το έτος"/>
+</td> 
+</tr>
+<tr>
+<td>Όνομα πατρός*:</td><td><input name="fathersname" type="text" size="30" required="required"/></td> 
+</tr>
+<tr>
+<td>Όνομα και επώνυμο μητρός*:</td><td><input name="mothersname" type="text" size="50" required="required"/></td> 
+</tr>
+<tr>
+<td>Αριθμός Δελτίου Ταυτότητας*:</td><td><input name="adt" type="text" size="8" required="required"/></td> 
+</tr>
+<tr>
+<td>Αριθμός Φορολογικού Μητρώου*:</td><td><input name="afm" type="text" size="9" required="required"/></td> 
+</tr>
+<tr>
+<td>Διεύθυνση (Οδός / Αριθμός / ΤΚ / Πόλη)*:</td><td><input name="address" type="text" size="50" required="required"/></td> 
+</tr>
+<tr>
+<td>Χώρα διαμονής*:</td><td><input name="country" type="text" size="30" required="required"/></td> 
+</tr>
+<tr>
+<td>Υπηκοότητα*:</td><td><input name="citizenship" type="text" size="30" required="required"/></td> 
+</tr>
+<tr>
+<td>Ιθαγένεια*:</td><td><input name="nationality" type="text" size="30" required="required"/></td> 
+</tr>
+<tr>
+<td>Τηλέφωνο οικίας*:</td><td><input name="phonehome" type="text" size="10" required="required"/></td> 
+</tr>
+<tr>
+<td>Κινητό τηλέφωνο:</td><td><input name="phonemobile" type="text" size="10"/></td> 
+</tr>
+</table>
+<br/> <div>* Υποχρεωτικά πεδία</div>
+<br/> <div>Πατώντας "Εγγραφή" δηλώνετε υπεύθυνα πως τα στοιχεία που παρέχετε στο σύστημα είναι πραγματικά και αντιστοιχούν στα δικά σας στοιχεία. 
+		Για όποιες παρατυπίες, οι οποίες έγιναν ηθελημένα και δεν διορθώθηκαν από εσάς, θα αντιμετωπίσετε τις νόμιμες συνέπειες που ορίζει το 
+		Ελληνικό Δίκαιο (N. 1599/1986). <a href="default.php?page=main.php&privacy=1">Δήλωση προστασίας απορρήτου.</a></div>
+<br/> <input type="submit" value="Εγγραφή" onclick="return confirm('Είστε σίγουροι πως όλα τα στοιχεία που δώσατε είναι σωστά;')"/>
+</div>
+</form>
+<script type="text/javascript">
+	var frmvalidator = new Validator("form");
+	frmvalidator.addValidation("username", "req", "Παρακαλώ εισάγετε το όνομα χρήστη.");
+	frmvalidator.addValidation("email", "req", "Παρακαλώ εισάγετε το email.");
+	frmvalidator.addValidation("email", "email", "Παρακαλώ εισάγετε μια έγκυρη διεύθυνση email.");
+	frmvalidator.addValidation("password", "req", "Παρακαλώ εισάγετε τον κωδικό πρόσβασης.");
+	frmvalidator.addValidation("password", "minlen=8", "Παρακαλώ εισάγετε τουλάχιστον 8 ψηφία στον κωδικό πρόσβασης.");
+	frmvalidator.addValidation("password_conf", "req", "Παρακαλώ εισάγετε ξανά τον κωδικό πρόσβασης.");
+	frmvalidator.addValidation("password_conf", "eqelmnt=password", "Οι κωδικοί πρόσβασης που εισάγατε δε ταιριάζουν.");
+	frmvalidator.addValidation("surname", "req", "Παρακαλώ εισάγετε το επώνυμό σας.");
+	frmvalidator.addValidation("name", "req", "Παρακαλώ εισάγετε το όνομά σας.");
+	frmvalidator.addValidation("year", "req", "Παρακαλώ εισάγετε το έτος γέννησης.");
+	frmvalidator.addValidation("year", "minlen=4", "Παρακαλώ εισάγετε ένα έγκυρο έτος γέννησης.");
+	frmvalidator.addValidation("year", "lt=1994", "Οι όροι χρήσης απαγορεύουν την πρόσβαση σε άτομα κάτω των 18 ετών.");
+	frmvalidator.addValidation("fathersname", "req", "Παρακαλώ εισάγετε το πατρόνυμο.");
+	frmvalidator.addValidation("mothersname", "req", "Παρακαλώ εισάγετε το ονοματεπώνυμο μητρός.");
+	frmvalidator.addValidation("adt", "req", "Παρακαλώ εισάγετε τον Αριθμό Δελτίου Ταυτότητας (ΑΔΤ).");
+	frmvalidator.addValidation("afm", "req", "Παρακαλώ εισάγετε τον Αριθμό Φορολογικού Μητρώου (ΑΦΜ).");
+	frmvalidator.addValidation("afm", "num", "Παρακαλώ εισάγετε μόνο αριθμούς στο ΑΦΜ.");
+	frmvalidator.addValidation("afm", "minlen=9", "Παρακαλώ εισάγετε ένα έγκυρο ΑΦΜ (9 ψηφία).");
+	frmvalidator.addValidation("afm", "maxlen=9", "Παρακαλώ εισάγετε ένα έγκυρο ΑΦΜ (9 ψηφία).");
+	frmvalidator.addValidation("address", "req", "Παρακαλώ εισάγετε τη διεύθυνση κατοικίας.");
+	frmvalidator.addValidation("country", "req", "Παρακαλώ εισάγετε τη χώρα διαμονής.");
+	frmvalidator.addValidation("citizenship", "req", "Παρακαλώ εισάγετε την υπηκοότητα.");
+	frmvalidator.addValidation("nationality", "req", "Παρακαλώ εισάγετε την ιθαγένεια.");
+	frmvalidator.addValidation("phonehome", "req", "Παρακαλώ εισάγετε το τηλέφωνο οικίας.");
+	frmvalidator.addValidation("phonehome", "num", "Παρακαλώ εισάγετε μόνο αριθμούς στο τηλέφωνο οικίας.");
+	frmvalidator.addValidation("phonehome", "maxlen=10", "Παρακαλώ εισάγετε ένα έγκυρο τηλέφωνο οικίας (10 ψηφία).");
+	frmvalidator.addValidation("phonehome", "minlen=10", "Παρακαλώ εισάγετε ένα έγκυρο τηλέφωνο οικίας (10 ψηφία).");
+	frmvalidator.addValidation("phonemobile", "num", "Παρακαλώ εισάγετε μόνο αριθμούς στο κινητό τηλέφωνο.");
+	frmvalidator.addValidation("phonemobile", "maxlen=10", "Παρακαλώ εισάγετε ένα έγκυρο κινητό τηλέφωνο (10 ψηφία).");
+</script>
+</body>
+</html> 

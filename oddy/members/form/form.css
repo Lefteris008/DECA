@@ -1,0 +1,17 @@
+﻿#form /*Το style της φόρμας*/
+{
+	font-family: 'Arial';
+	font-size:14px;
+    text-align:left;
+    background:#E9E9E9;
+    margin:auto;
+    width:700px;
+    padding:20px;
+    border-width:2px; 
+	  
+}
+
+#table
+{
+	border:0;
+}
